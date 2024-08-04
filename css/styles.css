@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #2980b9;
+}
+
+.frequency-btns {
+    margin-top: 20px;
+}
+
+.freq-btn {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.freq-btn:hover {
+    background-color: #bdc3c7;
+}
+
+.freq-btn.active {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#settingsView {
+    text-align: right;
+}
+
+#dhikrList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dhikrList li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addDhikrForm {
+    margin-top: 20px;
+}
+
+#addDhikrForm input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+#addDhikrForm button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

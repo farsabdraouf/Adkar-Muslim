@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "أذكار المسلم",
+    "version": "1.0",
+    "description": "إضافة لعرض أذكار المسلم بشكل دوري",
+    "permissions": [
+      "notifications",
+      "alarms",
+      "storage"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "512": "img/muslim.png"
+        }
+    },
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "512": "img/muslim.png"
+    },
+    "content_security_policy": "script-src 'self' https://cdn.tailwindcss.com; object-src 'self'"
+  }

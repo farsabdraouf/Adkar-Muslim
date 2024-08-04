@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أذكار المسلم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-100 p-4">
+    <div class="container mx-auto max-w-md">
+        <header class="flex justify-between items-center mb-4">
+            <button id="settingsBtn" class="text-gray-600 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </button>
+            <h1 class="text-xl font-bold text-gray-800">أذكار المسلم</h1>
+            <button id="developerBtn" class="text-gray-600 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+            </button>
+        </header>
+
+        <main id="mainView" class="bg-white rounded-lg shadow-md p-6">
+            <button id="toggleBtn" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-blue-600 transition duration-300">تشغيل</button>
+            <div class="flex justify-between space-x-2 rtl:space-x-reverse">
+                <button id="lowBtn" class="flex-1 bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300">منخفض</button>
+                <button id="mediumBtn" class="flex-1 bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300">متوسط</button>
+                <button id="highBtn" class="flex-1 bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300">عالي</button>
+            </div>
+        </main>
+
+            <section id="settingsView" class="hidden bg-white rounded-lg shadow-md p-6" style="
+    width: 237px;
+">
+            <div class="flex items-center mb-4">
+                <button id="backBtn" class="text-gray-600 hover:text-gray-800 mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </button>
+                <h2 class="text-lg font-semibold text-gray-800">الإعدادات</h2>
+            </div>
+            <ul id="dhikrList" class="mb-4"></ul>
+            <form id="addDhikrForm" class="flex">
+                <input type="text" id="newDhikr" placeholder="أضف ذكرًا جديدًا" class="flex-grow border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition duration-300">إضافة</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="developerInfo" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-lg font-semibold mb-2">شارك الاضافة واحصل على الاجر</h3>
+            <p class="mb-4">تم تطوير هذه الإضافة بواسطة [فارس عبد الرؤوف]</p>
+            <button id="closeDeveloperInfo" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300">إغلاق</button>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
