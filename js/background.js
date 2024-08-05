@@ -7,7 +7,7 @@ function showNotification() {
   const randomDhikr = dhikrList[Math.floor(Math.random() * dhikrList.length)];
   chrome.notifications.create({
     type: 'basic',
-    iconUrl: 'muslim.png',
+    iconUrl: '../img/muslim.png',
     title: 'ذكر',
     message: randomDhikr
   }, (notificationId) => {
